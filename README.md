@@ -7,6 +7,8 @@ https://www.marketas.com/
 - find bench mark sites.(for share design or functions we'll make)
 - make wire frames.
 - make design pages. 
+- coding common part and share.
+- coding pages, quality check(check at target browser)
 
 ## Our regulation
 
