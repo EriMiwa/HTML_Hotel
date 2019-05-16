@@ -1,14 +1,14 @@
-# project HTML_Hotel
-Revamping A Website
+# Project HTML_Hotel
+Revamping a website
 https://www.marketas.com/
 
-## tasks
-- check current web site contents, and list up progress points.
-- find bench mark sites.(for share design or functions we'll make)
-- make wire frames.
-- make design pages. 
-- code common part and share.
-- code pages, quality check(check at target browser)
+## Tasks
+- Check current web site contents, and list up progress points.
+- Find bench mark sites.(for share design or functions we'll make)
+- Make wire frames.
+- Make design pages. 
+- Code common part and share.
+- Code pages, quality check(check at target browser)
 
-## our regulation
+## Our Regulation
 
