@@ -82,13 +82,13 @@ header {
     height: 80px;
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     align-items: center;
 }
 
 .logo {
-    width: 150px;    
+    width: 200px;    
 }
 
 .top-nav li {
@@ -102,8 +102,8 @@ header {
     text-align: center;
     color: #111;
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     vertical-align: middle;
 }
 
@@ -203,7 +203,7 @@ footer > div {
 }
 
 .bnb-info p{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 #footer-nav {
@@ -216,7 +216,7 @@ footer > div {
 }
 
 #footer-nav li {
-    padding: 5px 0 0 20px;
+    padding: 15px 0 0 30px;
 }
 
 #footer-nav li a {
@@ -269,6 +269,6 @@ footer hr {
     background-color: #00af87;
 }
 
-footer .social-icon ul {
-    margin-top: 20px;
+footer .social-icon a {
+    margin-top: 15px;
 }
