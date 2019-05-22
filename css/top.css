@@ -1,0 +1,216 @@
+/* Margin and Padding */
+.p-70 {
+    padding: 70px;
+}
+
+.background-dark {
+    background-color: #c2b490;
+}
+
+.mb-1 {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Slid */
+.top-title {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.top-title h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #111;
+    line-height: 1.5;
+}
+
+.top-slide {
+    height: 640px;
+}
+
+.slideshow,
+.slideshow:after { 
+    position: absolute;
+    width: 100%;
+    height: 640px;
+    left: 0;
+    top: 160px;
+}
+
+.slideshow li span { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
+
+.slideshow li:nth-child(1) span { 
+    background-image: url("../Resources/honeymoonRoom/jacuzzi.jpg");
+}
+
+.slideshow li:nth-child(2) span { 
+    background-image: url("../Resources/food/eggs-benny.jpg");
+    animation-delay: 6s; 
+}
+
+.slideshow li:nth-child(3) span { 
+    background-image: url("../Resources/commonArea/diningRoom1.jpg");
+    animation-delay: 12s; 
+}
+
+.slideshow li:nth-child(4) span { 
+    background-image: url("../Resources/topPage/girlsInJacuzzi.jpg");
+    animation-delay: 18s; 
+}
+
+.slideshow li:nth-child(5) span { 
+    background-image: url("../Resources/topPage/victoria.jpg");
+    animation-delay: 24s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: .8; animation-timing-function: ease-out; }
+    17% { opacity: .8 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+/* Rooms */
+.room-selection {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+}
+
+.rooms {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.rooms img {
+    width: 300px;
+    height: 200px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.room-description {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    top: 130px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.room-description:hover {
+    transform: translateY(-130px);
+}
+
+.room-description h3 {
+    margin: 20px auto;
+}
+
+.room-description p {
+    height: 140px;
+    padding: 5px;
+    line-height: 1.3;
+}
+
+
+/* Reviews */
+.tripadvisor-review {
+    width: 60vw;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+} 
+
+.tripadvisor-review h3, h4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.awards {
+    display: block;
+    text-align: center;
+}
+
+.awards img {
+    max-width: 240px;
+    margin: 2.5em;
+}
+
+
+/* About */
+.about-history, .about-host {
+    display: flex;
+}
+
+.about-history {
+    margin-bottom: 40px;
+}
+
+.about-section-image img {
+    width: 447px;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.about article {
+    padding-left: 60px;
+}
+
+.about p {
+    line-height: 1.5;
+}
+
+.link-button {
+    background-color: #565656;
+    color: #fff;
+    text-align: center;
+    line-height: 100px; 
+    padding: 14px 30px;
+}
+
+.link-button:hover {
+    opacity: .8;
+}
+
+
+/* Video */
+.video-section {
+    width:60%;
+    padding-bottom: 33.75%;
+    height:0px;
+    position: relative;
+    margin: 60px auto;
+}
+
+.video-section iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
