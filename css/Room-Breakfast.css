@@ -19,7 +19,7 @@
     height: 31.5vh;
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
-    padding-top: 100px;
+    padding-top: 14vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -81,17 +81,17 @@
 .room-detail {
     max-width: 1300px; 
     background: #81716e;
-    padding: 15px;
+    padding: 2vw;
     display: inline-flex;
-    margin-bottom: 21px; 
+    justify-content: center;
+    margin-bottom: 2.3vw; 
 }
 
 .description-area,.swiper2 {
-    max-width: 400px;
+    max-width: 25vw;
 }
 
 .description-area dl,.swiper2 dl{
-    margin-top: 25vh;
     margin-top: 30px; 
     color: #fff;
 }
@@ -109,23 +109,29 @@
     padding: 2vh 0;
 }
 
+.room-icons {
+    margin-bottom: 1vh; 
+}
+
 .icon {
     display: inline-flex;
     width: 50px;
     height: 50px;
     background: #f0f0f0;
-    margin:1vw 1vw 1vw 0;
+    margin:1vh 1vw 1vh 0;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     color: #81716e;
     font-size: 14px;
 }
+
 .ft2 {
     position: relative;
     top: -10px;
 }
-.fas {
+
+.icon .fas {
     font-size: 28px;
     margin-top: 10px;
 }
@@ -134,8 +140,10 @@
     color: #fff;
     font-size: 18px;
     border: 1px solid #fff;
-    padding: 10px 15px ;
-    display: inline-block; 
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    display: inline-block;
     text-align: center;
     margin-bottom: 2vh;
     position: relative; 
@@ -149,7 +157,9 @@
     color: #565656;
     background: #fff;
     font-size: 18px;
-    padding: 16px 1.5vw 12px 1.5vw;
+    padding: 15px 10px;
+    height: 50px;
+    width: 150px;
     display: inline-block; 
     text-align: center;
 }
@@ -159,20 +169,28 @@
 }
 
 .swiper-container {
-    width: 900px;
+    max-width: 900px;
 }
 
 .swiper-button-prev,.swiper-button-next {
     color: #565656;
 }
 
+.description-area {
+    padding-right: 10px; 
+}
+
 #main-container2 h3 {
     padding-bottom: 30px; 
 }
 
-.description-area {
-    padding-right: 10px; 
+.food-slider {
+    display: flex;
+    justify-content: center;
+
 }
+
 .description-area2 {
     padding-left: 10px; 
-}
+    /* width: 450px */
+} 
