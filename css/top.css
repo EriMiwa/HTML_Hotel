@@ -93,13 +93,13 @@
 /* Rooms */
 .room-selection {
     display: grid;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
 }
 
 .rooms {
-    width: 300px;
+    align-self: stretch;
     height: 200px;
     position: relative;
     text-align: center;
@@ -107,7 +107,7 @@
 }
 
 .rooms img {
-    width: 300px;
+    align-self: stretch;
     height: 200px;
     background-size: contain;
     background-position: center center;
