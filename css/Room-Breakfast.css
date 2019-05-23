@@ -1,0 +1,148 @@
+.top-container {
+    width: 100vw;
+    text-align: center; 
+}
+
+.h1-title-area {
+    height: 31.5vh;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Resources/commonArea/commonRoom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1-title-area h1,a{
+    color: #fff;
+}
+
+.page-link-area {
+    padding: 5vh;
+}
+
+.page-link-area a {
+    font-size: 36px;
+    padding-left: 2vw;
+    margin: 3vh 2vw;
+    padding-top: 14vh;
+    text-align: left;
+    display:inline-block;
+    width: 33vw;
+    height: 34vh;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+#link-rooms {
+    background-image: url(../Resources/greenRoom/greenRoom1.jpg);
+}
+
+#link-foods {
+    background-image: url(../Resources/food/bagel.jpg);
+}
+
+.container-wrapper {
+    width: 100vw;
+    padding: 60px;
+    align-items: center;
+}
+
+.container-wrapper h2,p {
+    margin-bottom: 2vh;
+}
+
+#main-container1 {
+    background:#f0f0f0;
+}
+
+.room-detail {
+    max-width: 1300px; 
+    background: #81716e;
+    padding: 15px;
+    display: inline-flex;
+    margin-bottom: 21px; 
+}
+
+.description-area,.swiper2 {
+    max-width: 400px;
+}
+
+.description-area dl,.swiper2 dl{
+    margin-top: 25vh;
+    margin-top: 30px; 
+    color: #fff;
+}
+
+.description-area dt,.swiper2 dt {
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+}
+
+.description-area dd,.swiper2 dd {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    padding: 2vh 0;
+}
+
+.icon {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: #f0f0f0;
+    margin:1vw 1vw 1vw 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.room-price {
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 10px 15px ;
+    display: inline-block; 
+    text-align: center;
+    margin-bottom: 2vh;
+    position: relative; 
+}
+
+.room-price span {
+    font-size: 24px;
+}
+
+.btn-availability {
+    color: #565656;
+    background: #fff;
+    font-size: 18px;
+    padding: 16px 1.5vw 12px 1.5vw;
+    display: inline-block; 
+    text-align: center;
+}
+
+.btn-availability a {
+    color: #000;
+}
+
+.swiper-container {
+    width: 900px;
+}
+
+.swiper-button-prev,.swiper-button-next {
+    color: #565656;
+}
+
+#main-container2 h3 {
+    padding-bottom: 30px; 
+}
+
+.description-area {
+    padding-right: 10px; 
+}
+.description-area2 {
+    padding-left: 10px; 
+}
