@@ -118,6 +118,16 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    color: #81716e;
+    font-size: 14px;
+}
+.ft2 {
+    position: relative;
+    top: -10px;
+}
+.fas {
+    font-size: 28px;
+    margin-top: 10px;
 }
 
 .room-price {
