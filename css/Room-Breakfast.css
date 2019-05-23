@@ -1,0 +1,196 @@
+.top-container {
+    width: 100vw;
+    text-align: center; 
+    position: relative;
+}
+
+.top-container img {
+    width: 100vw;
+    height: 31.5vh;
+    object-position: 0 20%;
+    object-fit: cover; 
+}
+
+.h1-title-area h1 {
+    width: 100vw;
+    font-size: 36px;
+    text-align: left;
+    display:inline-block;
+    height: 31.5vh;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding-top: 14vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.h1-title-area h1,a{
+    color: #fff;
+}
+
+.page-link-area {
+    padding: 5vh;
+    position: relative;
+}
+
+.page-link-area img {
+    width: 33vw;
+    height: 34vh;
+    object-position: 70% 20%;
+    margin: 3vh 2vw;
+}
+
+.page-link-area a {
+    font-size: 36px;
+    padding-left: 2vw;
+    margin: 3vh 2vw;
+    padding-top: 14vh;
+    text-align: left;
+    display:inline-block;
+    width: 33vw;
+    height: 34vh;
+    background: rgba(0, 0, 0, 0.6);
+} 
+
+#link-rooms {
+    position: absolute;
+    top: 5vh;
+    left: 12.9vw;
+}
+
+#link-foods {
+    position: absolute;
+    top: 5vh;
+    left: 50.1vw;
+}
+
+.container-wrapper {
+    width: 100vw;
+    padding: 60px;
+}
+
+.container-wrapper h2,p {
+    margin-bottom: 2vh;
+}
+
+#main-container1 {
+    background:#f0f0f0;
+}
+
+.room-detail {
+    max-width: 1300px; 
+    background: #81716e;
+    padding: 2vw;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 2.3vw; 
+}
+
+.description-area,.swiper2 {
+    max-width: 25vw;
+}
+
+.description-area dl,.swiper2 dl{
+    margin-top: 30px; 
+    color: #fff;
+}
+
+.description-area dt,.swiper2 dt {
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+}
+
+.description-area dd,.swiper2 dd {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    padding: 2vh 0;
+}
+
+.room-icons {
+    margin-bottom: 1vh; 
+}
+
+.icon {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background: #f0f0f0;
+    margin:1vh 1vw 1vh 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #81716e;
+    font-size: 14px;
+}
+
+.ft2 {
+    position: relative;
+    top: -10px;
+}
+
+.icon .fas {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.room-price {
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 2vh;
+    position: relative; 
+}
+
+.room-price span {
+    font-size: 24px;
+}
+
+.btn-availability {
+    color: #565656;
+    background: #fff;
+    font-size: 18px;
+    padding: 15px 10px;
+    height: 50px;
+    width: 150px;
+    display: inline-block; 
+    text-align: center;
+}
+
+.btn-availability a {
+    color: #000;
+}
+
+.swiper-container {
+    max-width: 900px;
+}
+
+.swiper-button-prev,.swiper-button-next {
+    color: #565656;
+}
+
+.description-area {
+    padding-right: 10px; 
+}
+
+#main-container2 h3 {
+    padding-bottom: 30px; 
+}
+
+.food-slider {
+    display: flex;
+    justify-content: center;
+
+}
+
+.description-area2 {
+    padding-left: 10px; 
+    /* width: 450px */
+} 
