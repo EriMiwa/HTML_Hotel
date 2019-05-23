@@ -1,18 +1,25 @@
 .top-container {
     width: 100vw;
     text-align: center; 
+    position: relative;
+}
+
+.top-container img {
+    width: 100vw;
+    height: 31.5vh;
+    object-position: 0 20%;
+    object-fit: cover; 
 }
 
 .h1-title-area {
+    position: absolute;
+    top: 0;
+    width: 100vw;
     height: 31.5vh;
-    color: rgb(0, 0, 0);
-    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../Resources/commonArea/commonRoom.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .h1-title-area h1,a{
@@ -21,6 +28,14 @@
 
 .page-link-area {
     padding: 5vh;
+    position: relative;
+}
+
+.page-link-area img {
+    width: 33vw;
+    height: 34vh;
+    object-position: 70% 20%;
+    margin: 3vh 2vw;
 }
 
 .page-link-area a {
@@ -32,17 +47,34 @@
     display:inline-block;
     width: 33vw;
     height: 34vh;
+    background: rgba(0, 0, 0, 0.6);
+} 
+
+    #link-rooms {
+    position: absolute;
+    top: 5vh;
+    left: 12.9vw;
+    }
+
+    #link-foods {
+    position: absolute;
+    top: 5vh;
+    left: 50.1vw;
+    }
+
+/* .page-link-area a {
+    font-size: 36px;
+    padding-left: 2vw;
+    margin: 3vh 2vw;
+    padding-top: 14vh;
+    text-align: left;
+    display:inline-block;
+    width: 33vw;
+    height: 34vh;
     background: rgb(0, 0, 0);
     opacity: 0.8;
-}
+} */
 
-#link-rooms {
-    background-image: url(../Resources/greenRoom/greenRoom1.jpg);
-}
-
-#link-foods {
-    background-image: url(../Resources/food/bagel.jpg);
-}
 
 .container-wrapper {
     width: 100vw;
