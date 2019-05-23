@@ -147,7 +147,7 @@
     font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
 } 
 
-.tripadvisor-review h3, h4 {
+.tripadvisor-review h3, .tripadvisor-review h4 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
