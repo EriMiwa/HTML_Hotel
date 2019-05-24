@@ -32,8 +32,10 @@
 
 /* main area 1 */
 .container-wrapper {
-    width: 100vw;
+    width: 100%;
     padding: 60px;
+    display: flex;
+    flex-direction: column; 
 }
 
 .container-wrapper h2,p,h3 {
@@ -41,7 +43,7 @@
 }
 
 .info-box {
-    max-width: 1300px; 
+    min-width: 100%; 
     background: #c2b490;
     padding: 2vw;
     display: flex;
