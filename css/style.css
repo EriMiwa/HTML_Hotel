@@ -119,6 +119,8 @@ input#hamburger {
     display: block;
 }
 
+
+/* Responsive menu */
 @media only screen and (max-width: 1024px) {
     header {
         padding-left: 30px; 
@@ -306,6 +308,38 @@ footer hr {
     bottom: 20px;
 }
 
+
+/* responsive footer */
+@media only screen and (max-width: 1024px) {
+    footer {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    #footer-nav {
+        display: inline-block;
+        float: none;
+        margin: 20px auto;
+    }
+
+    #footer-nav li {
+        padding: 0;
+        margin: 5px;
+        float: left;
+    }
+
+    #footer-nav li:first-child {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #copyright {
+        line-height: 1.2;
+        bottom: 15px;
+    }
+}
 
 /* Social icons */
 .social-icon {
