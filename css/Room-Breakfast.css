@@ -40,6 +40,9 @@
     object-position: 70% 20%;
     margin: 3vh 2vw;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .page-link-area a {
     font-size: 36px;
@@ -79,7 +82,7 @@
 }
 
 .room-detail {
-    max-width: 1300px; 
+    min-width: 100%; 
     background: #81716e;
     padding: 2vw;
     display: inline-flex;
@@ -187,7 +190,6 @@
 .food-slider {
     display: flex;
     justify-content: center;
-
 }
 
 .description-area2 {
