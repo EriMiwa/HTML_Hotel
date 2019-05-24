@@ -111,6 +111,72 @@ header {
     color: #82716e;
 }
 
+input#hamburger {
+    display: none;
+}
+
+#hamburger:checked ~ #menu{
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        padding-left: 30px; 
+    }
+
+    #menu, header .social-icon {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+    }
+    
+    /* unchecked */
+    label.hamburger-menu:before { 
+        font-family: "Font Awesome 5 Free";
+        content: "\f0c9";
+        font-weight: 900;
+        font-size: 40px;
+        color: #82716e;
+    }
+
+    /* checked */
+    input.hamburger-menu:checked ~ label.hamburger-menu:before { 
+        font-family: "Font Awesome 5 Free";
+        content: "\f00d"; 
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    #menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        height: 500px;
+        padding: 50px;
+        padding-top: 10px;
+        z-index: 200;
+        background: #fff;
+        color: #82716e;
+    }
+
+    .top-nav li {    
+        display: block;
+        height: 70px;
+        text-align: center;
+        border-bottom: 1px solid #82716e;
+    }
+
+    .top-nav li a {
+        line-height: 70px;
+        font-size: 20px;
+    }    
+}
 
 /* Search bar */
 .search-container {
