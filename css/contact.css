@@ -1,0 +1,142 @@
+/* title area */
+.top-container {
+    width: 100vw;
+    text-align: center; 
+    position: relative;
+}
+
+.top-container img {
+    width: 100vw;
+    height: 31.5vh;
+    object-position: 0 20%;
+    object-fit: cover; 
+}
+
+.h1-title-area h1 {
+    width: 100vw;
+    font-size: 36px;
+    text-align: left;
+    display:inline-block;
+    height: 31.5vh;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding-top: 14vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.h1-title-area h1,a{
+    color: #fff;
+}
+
+/* main area 1 */
+.container-wrapper {
+    width: 100vw;
+    padding: 60px;
+}
+
+.container-wrapper h2,p,h3 {
+    margin-bottom: 2vh;
+}
+
+.info-box {
+    max-width: 1300px; 
+    background: #c2b490;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.3vw; 
+}
+
+.info-box ul {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    padding: 2vh 0;
+}
+
+.info-box ul li{
+    padding: 1vh 0;
+}
+
+.btn {
+    background-color: #565656;
+    font-size: 18px;
+    width: 288px;
+    height: 60px;
+    padding-top:18px;
+    display: inline-block; 
+    text-align: center;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+#main-container2 {
+    background: #e4decf;
+}
+
+.two-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.layout-left, .layout-right {
+    width: 44.5vw;
+    background: #c2b490;
+    padding: 2vw;
+}
+
+.contact-form input{
+    border-radius: 5px; 
+    width:96%;
+    height: 50px;
+    font-size: 17px;
+    padding: 5px 10px;
+    background: #e4decf;
+    border: 1px solid  #c2b490;
+}
+
+.contact-form textarea {
+    border-radius: 5px; 
+    width:96%;
+    height: 200px;
+    font-size: 17px;
+    padding: 5px 10px;
+    background: #e4decf;
+    border: 1px solid  #c2b490;
+}
+
+.contact-form select {
+    width:50%;
+    height: 50px;
+    font-size: 17px;
+    padding: 5px 10px;
+    background: #e4decf;
+    border: 1px solid  #c2b490;
+}
+
+/* input [type="submit"] {
+    background-color: #565656;
+    font-size: 18px;
+    width: 288px;
+    height: 60px;
+    padding-top:18px;
+    display: inline-block; 
+    text-align: center;
+} */
+
+.google-map {
+    margin: 2.5vh 0;
+}
+
+@media(max-width: 1100px) {
+    .layout-left, .layout-right {
+    width: 100vw;
+    background: #c2b490;
+    padding: 2vw;
+    }
+}
