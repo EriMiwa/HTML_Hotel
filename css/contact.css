@@ -91,6 +91,7 @@
 }
 
 .contact-form input{
+    border-radius: 5px; 
     width:96%;
     height: 50px;
     font-size: 17px;
@@ -100,6 +101,7 @@
 }
 
 .contact-form textarea {
+    border-radius: 5px; 
     width:96%;
     height: 200px;
     font-size: 17px;
@@ -114,6 +116,7 @@
     font-size: 17px;
     padding: 5px 10px;
     background: #e4decf;
+    border: 1px solid  #c2b490;
 }
 
 /* input [type="submit"] {
