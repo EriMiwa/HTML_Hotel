@@ -86,6 +86,7 @@ header {
     padding-left: 60px;
     padding-right: 60px;
     align-items: center;
+    background-color: #d7cec7;
 }
 
 .logo {
@@ -109,7 +110,7 @@ header {
 }
 
 .top-nav li a:hover {
-    color: #82716e;
+    color: #76323f;
 }
 
 input#hamburger {
@@ -144,7 +145,7 @@ input#hamburger {
         content: "\f0c9";
         font-weight: 900;
         font-size: 32px;
-        color: #82716e;
+        color: #565656;
     }
 
     /* checked */
@@ -164,15 +165,15 @@ input#hamburger {
         padding: 50px;
         padding-top: 10px;
         z-index: 200;
-        background: #fff;
-        color: #82716e;
+        background: #d7cec7;
+        color: #565656;
     }
 
     .top-nav li {    
         display: block;
         height: 70px;
         text-align: center;
-        border-bottom: 1px solid #82716e;
+        border-bottom: 1px solid #565656;
     }
 
     .top-nav li a {
@@ -197,7 +198,7 @@ input#hamburger {
 .search-container {
     width: 100vw;
     height: 80px;
-    background-color: #82716e;
+    background-color: #565656;
     position: -webkit-sticky;
     position: sticky;
     z-index: 100;
@@ -257,7 +258,7 @@ main {
     width: 100%;
     border-radius: 50%;
     border-color: none;
-    background-color: #e4decd;
+    background-color: #d7cec7;
     z-index: 100;
 }
 
@@ -265,12 +266,16 @@ main {
     opacity: 0.8;
 }
 
+#back-to-top a {
+    color: #565656;
+}
+
 
 /* Footer area */
 footer {
     width: 100vw;
     height: 372px;
-    background-color: #82716e;
+    background-color: #565656;
     color: #fff;
     position: relative;
 }
@@ -301,7 +306,7 @@ footer > div {
 }
 
 #footer-nav li a {
-    color: #e4decd;
+    color: #fff;
 }
 
 footer hr {
@@ -343,10 +348,6 @@ footer hr {
         display: inline-block;
         float: none;
         margin: 20px auto;
-    }
-
-    #footer-nav ul {
-        
     }
 
     #footer-nav li {
