@@ -213,7 +213,7 @@ input#hamburger {
 }
 
 .search-container input {
-    width: 150px;
+    width: 160px;
     height: 30px;
     border: none;
     background: transparent;
@@ -226,11 +226,20 @@ input#hamburger {
 }
 
 .search-container select {
+    background: transparent;
+    border: none;
     height: 30px;
+    width: 50px;
+    font-size: 14px;
+    margin-left: 20px;
+    color: #fff;
 }
 
 #adults-number, #kids-number {
+    width: 130px;
     color: #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
 }
 
 #check-btn {
