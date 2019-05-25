@@ -33,6 +33,7 @@ a {
     text-decoration: none;
     vertical-align: baseline;
     background: transparent;
+    cursor: pointer;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -121,7 +122,7 @@ input#hamburger {
 
 
 /* Responsive menu */
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     header {
         padding-left: 30px; 
     }
@@ -132,7 +133,7 @@ input#hamburger {
     
     .hamburger-menu {
         position: fixed;
-        top: 20px;
+        top: 25px;
         right: 30px;
         cursor: pointer;
     }
@@ -142,7 +143,7 @@ input#hamburger {
         font-family: "Font Awesome 5 Free";
         content: "\f0c9";
         font-weight: 900;
-        font-size: 40px;
+        font-size: 32px;
         color: #82716e;
     }
 
@@ -151,7 +152,7 @@ input#hamburger {
         font-family: "Font Awesome 5 Free";
         content: "\f00d"; 
         font-weight: 900;
-        font-size: 40px;
+        font-size: 32px;
     }
 
     #menu {
@@ -295,7 +296,7 @@ footer hr {
     clear: both;
     position: absolute;
     width: 100vw;
-    bottom: 60px;
+    bottom: 50px;
     padding: 0;
 }
 
@@ -306,21 +307,34 @@ footer hr {
     width: 100vw;
     text-align: center;
     bottom: 20px;
+    font-size: 14px;
 }
 
 
 /* responsive footer */
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     footer {
         display: block;
         height: auto;
+    }
+
+    footer > div, .bnb-info {
         width: 100%;
+        text-align: center;
+    }
+
+    footer .social-icon {
+        display: inline;
     }
 
     #footer-nav {
         display: inline-block;
         float: none;
         margin: 20px auto;
+    }
+
+    #footer-nav ul {
+        
     }
 
     #footer-nav li {
@@ -334,7 +348,15 @@ footer hr {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    #footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
     #copyright {
         line-height: 1.2;
         bottom: 15px;
@@ -371,4 +393,8 @@ footer hr {
 
 footer .social-icon a {
     margin-top: 15px;
+}
+
+footer .social-icon a:last-child {
+    margin-right: 0;
 }
