@@ -124,7 +124,7 @@ input#hamburger {
 /* Responsive menu */
 @media screen and (max-width: 1024px) {
     header {
-        padding-left: 30px; 
+        padding-left: 30px;
     }
 
     #menu, header .social-icon {
@@ -180,6 +180,18 @@ input#hamburger {
         font-size: 20px;
     }    
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        z-index: 100;
+    }
+
+    .search-container {
+        display: none;
+    }
+}
+
 
 /* Search bar */
 .search-container {
@@ -362,6 +374,7 @@ footer hr {
         bottom: 15px;
     }
 }
+
 
 /* Social icons */
 .social-icon {
