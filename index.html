@@ -102,7 +102,7 @@
             </p>
         </div>
         <section class="background-dark p-70">
-            <h2 class="mb-1">Rooms</h2>
+            <h2 class="mb-1 h2-color">Rooms</h2>
             <div class="room-selection">
                 <div class="rooms">
                     <img src="./Resources/budgetRoomShared/BudgetRoom7.jpg" alt="room photo">
@@ -183,10 +183,13 @@
                     <h3>Tripadvisor Reviews</h3>
                     <h4>Friendly and cute little place</h4>
                     <p>
-                        Stayed just for 2 nights. As we were arriving late, a nice note with instructions and our key was left behind. Room was spotlessly clean with decent amenities. The B&B is located in a really nice neighbourhood just a short walk from Victoria harbour, so if you are short of time like us, it’s the perfect place to stay.
-                        Highlights/ the breakfast, served by    friendly and efficient staff. Pancakes to die for and delicious eggs florentine. 
-                        Such a warm stay and highly recommended to travellers from all over the world.
+                        Stayed just for 2 nights. As we were arriving late, a nice note with instructions and our key was left behind. Room was spotlessly clean with decent amenities.
+                        <span id="dots">...</span>
+                        <span id="more">The B&B is located in a really nice neighbourhood just a short walk from Victoria harbour, so if you are short of time like us, it’s the perfect place to stay.
+                        Highlights/ the breakfast, served by friendly and efficient staff. Pancakes to die for and delicious eggs florentine. 
+                        Such a warm stay and highly recommended to travellers from all over the world.</span>
                     </p>
+                    <a onclick="myFunction()" id="myBtn" style="color: #565656;">read more</button>
                 </div>
                 <div class="awards">
                     <img src="https://www.marketas.com/wp-content/uploads/2014/08/trip-advisor-2014.jpg" alt="tripadvisor winner">
@@ -200,7 +203,7 @@
                     <img src="./Resources/topPage/house.jpg" alt="house photo">
                 </div>
                 <article>
-                    <h2 class="mb-1">History</h2>
+                    <h2 class="mb-1 h2-color">History</h2>
                     <p>
                         Marketa opened her B&B Victoria BC in 1996. With the help of her young son Jacob and Mr. T the lovable family dog (a real character!) she runs a warm and friendly hostelry accommodation with European flair, close to downtown Victoria. Her love of cooking is obvious to anyone who has sampled her gourmet breakfasts, which are a favourite of guests.
                         <br>
@@ -213,7 +216,7 @@
                     <img src="./Resources/topPage/marketa.jpg" alt="Marketa photo">
                 </div>
                 <article>
-                    <h2 class="mb-1">Host</h2>
+                    <h2 class="mb-1 h2-color">Host</h2>
                     <p>
                         Marketa opened her bed and breakfast in 1996. With the help of her young son Jacob and staff, she runs a warm and friendly hostelry with European flair. Her love of cooking is obvious to anyone who has sampled her gourmet breakfasts, which are a favourite of guests.
                         <br>
@@ -262,5 +265,22 @@
         <hr>
         <p id="copyright">2019 © Marketa's Bed and Breakfast, all rights reserved</p>
     </footer>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "read more"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "read less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </body>
 </html>
