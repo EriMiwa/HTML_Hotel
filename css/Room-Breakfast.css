@@ -78,12 +78,16 @@ html {
 }
 
 #main-container1 {
-    background:#f0f0f0;
+    background:#d7cec7;
+}
+
+#main-container1 h2 {
+    color:#76323f;
 }
 
 .room-detail {
     min-width: 100%; 
-    background: #81716e;
+    background: rgba(0, 0, 0, 0.6);
     padding: 2vw;
     display: inline-flex;
     justify-content: center;
@@ -125,7 +129,7 @@ html {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    color: #81716e;
+    color: rgba(0, 0, 0, 0.6);
     font-size: 14px;
 }
 
