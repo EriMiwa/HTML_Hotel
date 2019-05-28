@@ -73,17 +73,21 @@ html {
     padding: 60px;
 }
 
-.container-wrapper h2,p {
+.container-wrapper h2,.container-wrapper p {
     margin-bottom: 2vh;
 }
 
 #main-container1 {
-    background:#f0f0f0;
+    background:#d7cec7;
+}
+
+#main-container1 h2 {
+    color:#76323f;
 }
 
 .room-detail {
     min-width: 100%; 
-    background: #81716e;
+    background: #f1f1f1;
     padding: 2vw;
     display: inline-flex;
     justify-content: center;
@@ -96,7 +100,7 @@ html {
 
 .description-area dl,.swiper2 dl{
     margin-top: 30px; 
-    color: #fff;
+    color: #565656;
 }
 
 .description-area dt,.swiper2 dt {
@@ -120,13 +124,14 @@ html {
     display: inline-flex;
     width: 50px;
     height: 50px;
-    background: #f0f0f0;
+    background: #f1f1f1;
     margin:1vh 1vw 1vh 0;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    color: #81716e;
+    color: #565656;
     font-size: 14px;
+    border: 1px solid #565656;
 }
 
 .ft2 {
@@ -140,9 +145,9 @@ html {
 }
 
 .room-price {
-    color: #fff;
+    color: #76323f;
     font-size: 18px;
-    border: 1px solid #fff;
+    border: 1px solid #565656;
     padding: 10px;
     height: 50px;
     width: 150px;
@@ -157,8 +162,7 @@ html {
 }
 
 .btn-availability {
-    color: #565656;
-    background: #fff;
+    background: #76323f;
     font-size: 18px;
     padding: 15px 10px;
     height: 50px;
@@ -168,7 +172,7 @@ html {
 }
 
 .btn-availability a {
-    color: #000;
+    color: #f1f1f1;
 }
 
 .swiper-container {

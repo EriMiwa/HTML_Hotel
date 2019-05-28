@@ -4,11 +4,15 @@
 }
 
 .background-dark {
-    background-color: #c2b490;
+    background-color: #d7cec7;
 }
 
 .mb-1 {
     margin-bottom: 1.5rem;
+}
+
+.h2-color {
+    color: #76323f;
 }
 
 
@@ -145,11 +149,16 @@
     text-align: center;
     margin: 0 auto;
     font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+    font-size: 12px;
 } 
 
 .tripadvisor-review h3, .tripadvisor-review h4 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+}
+
+#more {
+    display: none;
 }
 
 .awards {
@@ -169,7 +178,7 @@
 }
 
 .about-history {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .about-section-image img {
@@ -177,10 +186,7 @@
     height: 320px;
     object-fit: cover;
     object-position: top;
-}
-
-.about article {
-    padding-left: 60px;
+    margin: 0 60px 40px 0;
 }
 
 .about p {
@@ -188,7 +194,7 @@
 }
 
 .link-button {
-    background-color: #565656;
+    background-color: #76323f;
     color: #fff;
     text-align: center;
     line-height: 100px; 
@@ -213,4 +219,47 @@
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .about-history, .about-host {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-section-image img {
+        margin-right: 0;
+    }
+
+    .room-selection {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+    }
+
+    .video-section {
+        width:80%;
+        padding-bottom: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .p-70 {
+        padding: 2rem;
+    }
+
+    .about-section-image img {
+        width: 80vw;
+        height: 30vh;
+        max-height: 320px; 
+    }
+    
+    .awards img {
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+
+    .tripadvisor-review {
+        width: 90%;
+    } 
 }

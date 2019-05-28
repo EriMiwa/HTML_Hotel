@@ -33,6 +33,7 @@ a {
     text-decoration: none;
     vertical-align: baseline;
     background: transparent;
+    cursor: pointer;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -85,6 +86,7 @@ header {
     padding-left: 60px;
     padding-right: 60px;
     align-items: center;
+    background-color: #d7cec7;
 }
 
 .logo {
@@ -108,7 +110,87 @@ header {
 }
 
 .top-nav li a:hover {
-    color: #82716e;
+    color: #76323f;
+}
+
+input#hamburger {
+    display: none;
+}
+
+#hamburger:checked ~ #menu{
+    display: block;
+}
+
+
+/* Responsive menu */
+@media screen and (max-width: 1024px) {
+    header {
+        padding-left: 30px;
+    }
+
+    #menu, header .social-icon {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        position: fixed;
+        top: 25px;
+        right: 30px;
+        cursor: pointer;
+    }
+    
+    /* unchecked */
+    label.hamburger-menu:before { 
+        font-family: "Font Awesome 5 Free";
+        content: "\f0c9";
+        font-weight: 900;
+        font-size: 32px;
+        color: #565656;
+    }
+
+    /* checked */
+    input.hamburger-menu:checked ~ label.hamburger-menu:before { 
+        font-family: "Font Awesome 5 Free";
+        content: "\f00d"; 
+        font-weight: 900;
+        font-size: 32px;
+    }
+
+    #menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        height: 500px;
+        padding: 50px;
+        padding-top: 10px;
+        z-index: 200;
+        background: #d7cec7;
+        color: #565656;
+    }
+
+    .top-nav li {    
+        display: block;
+        height: 70px;
+        text-align: center;
+        border-bottom: 1px solid #565656;
+    }
+
+    .top-nav li a {
+        line-height: 70px;
+        font-size: 20px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        z-index: 100;
+    }
+
+    .search-container {
+        display: none;
+    }
 }
 
 
@@ -116,7 +198,7 @@ header {
 .search-container {
     width: 100vw;
     height: 80px;
-    background-color: #82716e;
+    background-color: #565656;
     position: -webkit-sticky;
     position: sticky;
     z-index: 100;
@@ -131,7 +213,7 @@ header {
 }
 
 .search-container input {
-    width: 150px;
+    width: 160px;
     height: 30px;
     border: none;
     background: transparent;
@@ -144,11 +226,20 @@ header {
 }
 
 .search-container select {
+    background: transparent;
+    border: none;
     height: 30px;
+    width: 50px;
+    font-size: 14px;
+    margin-left: 20px;
+    color: #fff;
 }
 
 #adults-number, #kids-number {
+    width: 130px;
     color: #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
 }
 
 #check-btn {
@@ -176,7 +267,7 @@ main {
     width: 100%;
     border-radius: 50%;
     border-color: none;
-    background-color: #e4decd;
+    background-color: #d7cec7;
     z-index: 100;
 }
 
@@ -184,12 +275,16 @@ main {
     opacity: 0.8;
 }
 
+#back-to-top a {
+    color: #565656;
+}
+
 
 /* Footer area */
 footer {
     width: 100vw;
     height: 372px;
-    background-color: #82716e;
+    background-color: #565656;
     color: #fff;
     position: relative;
 }
@@ -220,14 +315,14 @@ footer > div {
 }
 
 #footer-nav li a {
-    color: #e4decd;
+    color: #fff;
 }
 
 footer hr {
     clear: both;
     position: absolute;
     width: 100vw;
-    bottom: 60px;
+    bottom: 50px;
     padding: 0;
 }
 
@@ -238,6 +333,56 @@ footer hr {
     width: 100vw;
     text-align: center;
     bottom: 20px;
+    font-size: 14px;
+}
+
+
+/* responsive footer */
+@media screen and (max-width: 1024px) {
+    footer {
+        display: block;
+        height: auto;
+    }
+
+    footer > div, .bnb-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .social-icon {
+        display: inline;
+    }
+
+    #footer-nav {
+        display: inline-block;
+        float: none;
+        margin: 20px auto;
+    }
+
+    #footer-nav li {
+        padding: 0;
+        margin: 5px;
+        float: left;
+    }
+
+    #footer-nav li:first-child {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #copyright {
+        line-height: 1.2;
+        bottom: 15px;
+    }
 }
 
 
@@ -271,4 +416,8 @@ footer hr {
 
 footer .social-icon a {
     margin-top: 15px;
+}
+
+footer .social-icon a:last-child {
+    margin-right: 0;
 }
