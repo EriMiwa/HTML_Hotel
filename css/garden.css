@@ -1,0 +1,169 @@
+/* margin & padding */
+.p-70 {
+    padding: 70px;
+}
+
+
+/* top section */
+.top-section {
+    position: relative;
+    text-align: center;
+}
+
+.top-section img {
+    width: 100vw;
+    height: 320px;
+    opacity: 0.8;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.top-section h1 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    text-shadow: 1px 1px 2px #111;
+}
+
+
+/* link section */
+.page-links {
+    display: grid;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 0;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));  
+}
+
+.garden-link {
+    position: relative;
+    text-align: center;
+    background-color: #000;
+}
+
+.garden-link img {
+    width: 100%;
+    height: 264px;
+    opacity: 0.5;
+    vertical-align: bottom;
+    transition: opacity .5s;
+}
+
+.garden-link img:hover {
+    opacity: 0.8;
+}
+
+.garden-link h2 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+}
+
+
+/* gardens */
+.gardens {
+    padding-top: 100px;
+}
+
+.gardens:nth-child(odd) {
+    background-color: #d7cec7;
+}
+
+.garden-info {
+    float: left;
+}
+
+.garden-info h2 {
+    color: #76323f;
+    line-height: 2;
+}
+
+.garden-info i {
+    font-size: 18px;
+    background-color: #76323f;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: .4rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.garden-info span {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #565656;
+}
+
+.gardens img {
+    float: right;
+    width: 50vw;
+    height: 21vw;
+    max-width: 1000px;
+    max-height: 500px;
+    min-height: 250px;
+}
+
+.gardens p {
+    clear: both;
+    padding-top: 70px;
+}
+
+.gardens ul {
+    list-style: circle;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.gardens li {
+    font-size: 16px;
+    letter-spacing: .08em;
+    line-height: 1.4;
+    list-style-position: inside;
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .page-links {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+    }
+
+    .garden-link img {
+        height: 150px;
+    }
+
+    .gardens img {
+        float: none;
+        width: 100%;
+        margin: 1.5rem auto;
+    }
+
+    .garden-info h2 {
+        line-height: 1.2;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .p-70 {
+        padding: 30px;
+    }
+
+    .gardens {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    
+    .gardens p {
+        padding-top: 1rem;
+        line-height: 1.4;
+    }
+}
