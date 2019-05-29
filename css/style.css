@@ -70,6 +70,10 @@ p {
 
 
 /* Common area */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-flow: column;

@@ -40,9 +40,6 @@
     object-position: 70% 20%;
     margin: 3vh 2vw;
 }
-html {
-    scroll-behavior: smooth;
-}
 
 .page-link-area a {
     font-size: 36px;
