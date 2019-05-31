@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Marketa’s Bed & Breakfast. Located in the heart of downtown Victoria, BC">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="" rel="icon" type="image/x-icon">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/nearby.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <title>Places Nearby | Marketa's Bed and Breakfast</title>
+
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../Resources/logo.png" alt="logo"  class="logo">
+        </a>
+        <div class="top-nav">
+            <nav role="navigation">
+                <input id="hamburger" class="hamburger-menu" type="checkbox"/>
+                <label for="hamburger" class="hamburger-menu"></label>
+                <ul id="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Room-breakfast/index.html">Room & Breakfast</a></li>
+                    <li><a href="../Neighbour/index.html">Neighbourhood Guide</a></li>
+                    <li><a href="../Contact/index.html">Contact</a></li>
+                    <li><a href="../Gallery/index.html">Art Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-icon">
+            <div class="social-icon">
+                <a class="twitter-icon fab fa-twitter" href="https://twitter.com/MissMarketa" ></a>
+                <a class="facebook-icon fab fa-facebook-f" href="https://www.facebook.com/MarketasBedandBreakfast/"></a>
+                <a class="tripadvisor-icon fab fa-tripadvisor" href="https://www.tripadvisor.ca/Hotel_Review-g154945-d610296-Reviews-Marketa_s_Bed_and_Breakfast-Victoria_Victoria_Capital_Regional_District_Vancouver_Islan.html"></a>
+            </div>
+        </div>
+    </header>
+    <div class="search-container">
+        <form method="get" action="">
+            <div id="booking-date">
+                <input name="checkIn" id="check-in" type="date" placeholder="Check In">
+            </div>
+            <div id="booking-date">
+                <input name="checkOut" id="check-out" type="date" placeholder="Check Out">
+            </div>
+            <div id="adults-number">
+                <label>Adults</label>
+                <select name="adults" class="">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div id="kids-number">
+                <label>Kids</label>
+                <select name="adults" class="">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>        
+            </div>
+            <input type="submit" value="Check Availability" id="check-btn">
+        </form>
+    </div>
+    <main>
+        <div class="top-section">
+            <img class="img" src="../Resources/nearby/things-to-do.jpg" alt="">
+            <h1>Places Nearby</h1>
+        </div>
+        <section class="page-nav">
+            <p class="p-70">
+                Whatever you need it’s probably within walking distance of your room.<br>
+                The list below will help you, but feel free to ask us in person for directions.
+            </p>
+            <div class="page-links p-70">
+                <a href="#dining">
+                    <div class="link">
+                        <img src="../Resources/nearby/dining-image.jpg" alt="dining photo">
+                        <h2>Local Dining</h2>
+                    </div>
+                </a>
+                <a href="#amenities">
+                    <div class="link">
+                        <img src="../Resources/nearby/amenities-image.jpg" alt="amenities photo">
+                        <h2>Amenities</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="dining" class="p-70">
+            <h2>Local Dining</h2>
+            <div class="dining-wrapper">
+                <div class="places">
+                    <p class="place-category f-15">Downtown</p>
+                    <hr>
+                    <p class="place-name">Il Covo Trattoria</p>
+                    <p class="place-description">
+                        Located in the historic area of downtown and steps from the Inner Harbour, Il Covo Trattoria is a memorable and unique Italian dining experience. Being a Trattoria, we’re the perfect spot for any occasion where you can enjoy casual, rustic Italian cuisine in a warm old world Tuscan ambience. We also offer a beautiful garden patio for outdoor eating in an al fresco Italian style.
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="https://www.google.com/maps/place/IL+Covo+Trattoria/@48.421825,-123.3827647,17z/data=!3m1!4b1!4m5!3m4!1s0x548f74a28053d759:0x63fd515f0af0b907!8m2!3d48.421825!4d-123.380576" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            106 Superior St., Victoria
+                        </a>
+                        <a class="place-website" href="https://www.ilcovotrattoria.ca">
+                            <i class="fas fa-globe"></i>
+                            website
+                        </a>
+                    </div>
+                </div>
+                <div class="places">
+                    <p class="place-category f-15">Downtown</p>
+                    <hr>
+                    <p class="place-name">Santiago Cafe</p>
+                    <p class="place-description">
+                        South American tapas, funky casual environment, over looking the Victoria’s Inner Harbour, Santiago Cafe is great for lunch, dinner or snack. Great Sangria and nachos!
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="https://www.google.com/maps/place/Santiago's+Cafe/@48.4214034,-123.3746959,15z/data=!4m5!3m4!1s0x0:0xba1a19d0a253f99c!8m2!3d48.4214034!4d-123.3746959" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            660 Oswego, Victoria
+                        </a>
+                        <a class="place-website" href="http://restaurantsnapshot.com/SantiagosCafe/">
+                            <i class="fas fa-globe"></i>
+                            website
+                        </a>
+                    </div>
+                </div>
+                <div class="places">
+                    <p class="place-category f-15">Downtown</p>
+                    <hr>
+                    <p class="place-name">Blue Crab Seafood House</p>
+                    <p class="place-description">
+                        Wonderful view of the Inner Harbour, fresh seafood, lunch or dinner. Definitely a treat!
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="https://www.google.com/maps/place/Blue+Crab+Seafood+House/@48.4222022,-123.3796261,15z/data=!4m2!3m1!1s0x0:0xac9090f00dbb321e?sa=X&ved=2ahUKEwi6zpXMusHiAhVFJzQIHWsRCUsQ_BIwCnoECBAQCA" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            146 Kingston St., Victoria
+                        </a>
+                        <a class="place-website" href="http://bluecrab.ca/">
+                            <i class="fas fa-globe"></i>
+                            website
+                        </a>
+                    </div>
+                </div>
+                <div class="places">
+                    <p class="place-category f-15">Downtown</p>
+                    <hr>
+                    <p class="place-name">Victoria Harbour House Restaurant</p>
+                    <p class="place-description">
+                        Offers international cuisine of the fine quality. Elegant, comfortable it overlooks Victoria Inner Harbour. The service is always excellent. The menu has a wide selection of fine steaks, delicate seafood or rack of lamb roasted to perfection. Just go by and smell it!
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="https://www.google.com/maps/place/Victoria+Harbour+House+Restaurant/@48.4211323,-123.3744302,15z/data=!4m5!3m4!1s0x0:0xf17b3a4147777bf0!8m2!3d48.4211323!4d-123.3744302" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            607 Oswego St, Victoria
+                        </a>
+                        <a class="place-website" href="http://victoriaharbourhouse.com/">
+                            <i class="fas fa-globe"></i>
+                            website
+                        </a>
+                    </div>
+                </div>
+                <div class="places">
+                    <p class="place-category f-15">Deli</p>
+                    <hr>
+                    <p class="place-name">Sam's Deli & Bistro</p>
+                    <p class="place-description">
+                        The best sandwiches, central downtown location, next to the Inner Harbor, great for lunch. Better be hungry, huge portions, shrimp and asparagus sandwich…my favorite!
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="https://www.google.com/maps/place/Sam's+Deli+%26+Bistro/@48.4230315,-123.3681471,15z/data=!4m5!3m4!1s0x0:0xe646c8782ca9210!8m2!3d48.4230315!4d-123.3681471" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            805 Government St., Victoria
+                        </a>
+                    </div>
+                </div>
+                <div class="places">
+                    <p class="place-category f-15">Steak</p>
+                    <hr>
+                    <p class="place-name">The Keg</p>
+                    <p class="place-description">
+                        Serving Victoria for over 25 year right in the heart of downtown, the Keg continues serving the best steak grilled to your exacting taste… and the prime rib slow roasted in famous Keg spice. There is much more on the menu, starting with appetizers, salads, seafood (just imagine steak and lobster). Must not miss the delectable deserts. Enjoy the sunset and the friendly environment. Classic!
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="https://www.google.com/maps/place/The+Keg+Steakhouse+%2B+Bar+-+Fort+Street/@48.425227,-123.3695419,15z/data=!4m2!3m1!1s0x0:0x5b91ae66e0571c41?sa=X&ved=2ahUKEwjH-IGCzMHiAhXVGDQIHS2cBusQ_BIwEnoECBEQCA" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            500 Fort St. Victoria
+                        </a>
+                        <a class="place-website" href="https://www.kegsteakhouse.com/">
+                            <i class="fas fa-globe"></i>
+                            website
+                        </a>
+                    </div>
+                </div>
+                <div class="places">
+                    <p class="place-category f-15">Steak</p>
+                    <hr>
+                    <p class="place-name">Nautical Nellies Steak & Seafood House</p>
+                    <p class="place-description">
+                        We are well known for specializing in fresh, delectable seafood specialties and mouth watering premium aged steaks. Nautical Nellies has established itself as a world class steak and seafood house that keeps guests coming back for more.
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="https://nauticalnelliesrestaurant.com/" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            1001 Wharf St., Victoria
+                        </a>
+                        <a class="place-website" href="">
+                            <i class="fas fa-globe"></i>
+                            website
+                        </a>
+                    </div>
+                </div>
+                <div class="places">
+                    <p class="place-category f-15">Italian</p>
+                    <hr>
+                    <p class="place-name">Pagliacci's</p>
+                    <p class="place-description">
+                        Extremely popular with the locals, convenient downtown location, 10 min. walk from the Inner Harbour, Pagliacci’s offer a great selection of salads and pasta. Named after your favorite movies and movie stars each meal has a little twist. Half portions are available and even half would fill you up. During the week there is live entertainment. We suggest that you may go early to avoid the line up, they don’t take reservations.
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="https://www.google.com/maps/place/Pagliacci's/@48.4244429,-123.3664177,15z/data=!4m5!3m4!1s0x0:0x2b77640f00e09425!8m2!3d48.4244429!4d-123.3664177" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            1011 Broad St., Victoria
+                        </a>
+                        <a class="place-website" href="https://www.pagliaccis.ca/">
+                            <i class="fas fa-globe"></i>
+                            website
+                        </a>
+                    </div>
+                </div>
+                <div class="places">
+                    <p class="place-category f-15">Downtown</p>
+                    <hr>
+                    <p class="place-name"></p>
+                    <p class="place-description">
+                        
+                    </p>
+                    <div class="place-info">
+                        <a class="place-address" href="" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            
+                        </a>
+                        <a class="place-website" href="">
+                            <i class="fas fa-globe"></i>
+                            website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="amenities" class="p-70">
+            <h2>Amenities</h2>
+            <div class="amenity-group">
+                <h3>Bank</h3>
+                <table>
+                    <tr>
+                        <th class="business-name" colspan="3">Bank of Montreal</th>
+                    </tr>
+                    <tr  class="business-info">
+                        <td><i class="fas fa-map-marker-alt"></i>230 Menzies</td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-389-2441
+                        </td>
+                        <td>
+                            <a href="http://www.bmo.com/">
+                                <i class="fas fa-globe"></i>
+                                website
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="amenity-group">
+                <h3>Churches</h3>
+                <table>
+                    <tr>
+                        <th class="business-name" colspan="3">Capital Unitarian Universalist Congregation</th>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            234 Menzies                
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-383-3765
+                        </td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th class="business-name" colspan="3">Church of Our Lord (Reformed Episcopal)</th>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            626 Blanshard
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-383-8915
+                        </td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="business-name" colspan="3">Church of Truth</td>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            111 Superior
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-382-5412
+                        </td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="business-name" colspan="3">James Bay United Church</td>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            511 Michigan
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-384-5821
+                        </td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="amenity-group">
+                <h3>Cinema</h3>
+                <table>
+                    <tr>
+                        <td class="business-name" colspan="3">Capitol 6 (Famous Players)</td>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            805 Yates
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-384-6811
+                        </td>
+                        <td>
+                            <a href="http://www.capitol6.ca/">
+                                <i class="fas fa-globe"></i>
+                                website
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="business-name" colspan="3">Cineplex Odeon Victoria</td>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            780 Yates
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-383-0513
+                        </td>
+                        <td>
+                            <a href="https://www.cineplex.com/Theatre/cineplex-odeon-victoria-cinemas?utm_source=google&utm_medium=organic&utm_campaign=local&utm_content=CPXOdeonVictoria">
+                                <i class="fas fa-globe"></i>
+                                website
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="business-name" colspan="3">Vic Theatre</td>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            808 Douglas
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-389-0444
+                        </td>
+                        <td>
+                            <a href="http://www.victheatre.com/">
+                                <i class="fas fa-globe"></i>
+                                website
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="amenity-group">
+                <h3>Florals</h3>
+                <table>
+                    <tr>
+                        <td class="business-name" colspan="3">Daisy Chain Florists</td>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            455 Simcoe
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-382-2512
+                        </td>
+                        <td>
+                            <a href="http://www.ftd.com/daisychainvictoria/">
+                                <i class="fas fa-globe"></i>
+                                website
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="business-name" colspan="3">Don's Food & Floral</td>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            99 Menzies
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-386-1915
+                        </td>
+                        <td>
+                            <a href="https://www.facebook.com/donsfoodmart/">
+                                <i class="fas fa-globe"></i>
+                                website
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="business-name" colspan="3">Fine Floral Designs</td>
+                    </tr>
+                    <tr  class="business-info">
+                        <td>
+                            <i class="fas fa-map-marker-alt"></i>
+                            159 Menzies
+                        </td>
+                        <td>
+                            <i class="fas fa-phone"></i>
+                            250-385-8411
+                        </td>
+                        <td>
+                            <a href="https://www.finefloraldesigns.com/">
+                                <i class="fas fa-globe"></i>
+                                website
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Back to top button -->
+        <button id="back-to-top">
+            <a href="#top"><i class="fas fa-chevron-up"></i></a>
+        </button>
+    </main>
+    <footer>
+        <div>
+            <div class="bnb-info">
+                <h4>Marketa’s Bed and Breakfast</h4>
+                <p>
+                    239 Superior St, Victoria, BC, V8V 1T4, Canada <br>
+                    Phone: 250-384-9844 <br>
+                    Free Parking
+                </p>
+                <div class="social-icon">
+                    <a class="twitter-icon fab fa-twitter" href="https://twitter.com/MissMarketa" ></a>
+                    <a class="facebook-icon fab fa-facebook-f" href="https://www.facebook.com/MarketasBedandBreakfast/"></a>
+                    <a class="tripadvisor-icon fab fa-tripadvisor" href="https://www.tripadvisor.ca/Hotel_Review-g154945-d610296-Reviews-Marketa_s_Bed_and_Breakfast-Victoria_Victoria_Capital_Regional_District_Vancouver_Islan.html"></a>
+                </div>
+            </div>
+            <ul id="footer-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Room-breakfast/index.html">Room & Breakfast</a></li>
+                <li><a href="../Neighbour/index.html">Neighbourhood Guide</a></li>
+                <li><a href="../Contact/index.html">Contact</a></li>
+                <li><a href="../Gallery/index.html">Art Gallery</a></li>
+                <li><a href="../Booking/index.html">Book Now</a></li>
+            </ul>
+        </div>
+        <hr>
+        <p id="copyright">2019 © Marketa's Bed and Breakfast, all rights reserved</p>
+    </footer>
+</body>
+</html>
