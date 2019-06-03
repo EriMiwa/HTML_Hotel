@@ -132,44 +132,62 @@
 
 
 /* amenities section */
-.amenity-group {
-    background-color: #ddd;
-    width: 87vw;
-}
-
-.amenity-group h3{
+#amenities h3{
     color: #fff;
     background-color: #565656;
     line-height: 35px;
     padding-left: 10px;
 }
 
-.amenity-group table {
+.amenity-group {
     background: #eee;
-    text-align: center;
-    border-collapse: separate;
-    border-spacing: 8px; 
-    border: solid 1px #fff;
-    display: inline-block;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.business-info td{
-    background-color: #fff;
-    min-width: 125px;
-    width: 9vw;
-    line-height: 25px;
-    margin: 10px;
+.business-group{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+.business-name {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .business-info i {
-    margin-right: 2px;
+    background-color: #fff;
+    line-height: 25px;
+    min-width: 150px;
+}
+
+.business-info i::before {
+    margin-right: 5px;
+}
+
+.business-info a {
+    color: #000;
+}
+
+.business-info a:visited {
+    color:#565656;
+}
+
+.business-info a:hover { 
+    color: #76323f;
 }
 
 
 /* responsive */
 @media screen and (max-width: 1024px) {
     .amenity-group {
-        width: 80.5vw;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .business-info i {
+        min-width: 130px;
     }
 }
 
@@ -182,14 +200,8 @@
         height: 150px;
     }
     
-    .amenity-group table {
-        table-layout: fixed;
-        width: 100%;
-    }
-    
-    .business-info td{
-        min-width: auto;
-        width: 30vw;
+    .amenity-group {
+        grid-template-columns: 100%;
     }
 }
 
@@ -208,6 +220,10 @@
     }
     
     .dining-wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }    
+
+    .amenity-group {
+        grid-template-columns: 100%;
+    }
 }
